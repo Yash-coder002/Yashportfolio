@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Verma - Portfolio</title>
+    <style>
+        /* CSS Section */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .profile-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            gap: 40px;
+        }
+        
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #3498db;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        h1, h2 {
+            color: #2c3e50;
+        }
+        
+        .contact-info {
+            margin: 20px 0;
+        }
+        
+        .contact-info a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+        
+        .project {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        
+        .todo-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .todo-list li {
+            padding: 8px 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .todo-list input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Profile Image and Header -->
+    <div class="profile-header">
+        <img src="WhatsApp Image 2025-04-29 at 2.47.59 AM.jpeg" alt="Yash Verma" class="profile-image">
+        <div>
+            <h1>Yash Verma</h1>
+            <h2>B.Tech Computer Science Student</h2>
+            <p>Full-Stack Developer | AI Enthusiast | Cloud Computing</p>
+        </div>
+    </div>
+
+    <!-- HTML Section -->
+    <header>
+        <div class="about-me">
+            <h2>About Me</h2>
+            <p>Hi, I'm YASH VERMA, a B.Tech Computer Science student at Lovely Professional University, specializing in Full-Stack Development, Artificial Intelligence, and Cloud Computing. I focus on building scalable applications and have a solid foundation in both front-end and back-end development. I am committed to continuously improving my skills in emerging technologies.</p>
+        </div>
+        <div class="contact-info">
+            <a href="tel:+918168613449">+918168613449</a>
+            <a href="mailto:yashverma@example.com">yashverma@example.com</a>
+            <a href="https://www.linkedin.com/in/yash-verma-28-ku?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
+        </div>
+        <a href="#" class="btn" id="downloadBtn">Download my CV</a>
+    </header>
+
+    <section id="skills">
+        <h2>Skills & Technologies</h2>
+        <table>
+            <tr>
+                <th>Programming Languages</th>
+                <td>Python (Advanced)</td>
+                <td>Java</td>
+                <td>C++</td>
+                <td>JavaScript (Advanced)</td>
+            </tr>
+            <tr>
+                <th>Frontend Development</th>
+                <td>HTML5 (Advanced)</td>
+                <td>CSS3 (Advanced)</td>
+                <td>Next.js (Intermediate)</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Backend Development</th>
+                <td>Node.js (Advanced)</td>
+                <td>Express.js (Intermediate)</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Database</th>
+                <td>MySQL (Intermediate)</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Cloud & DevOps</th>
+                <td>AWS (Intermediate)</td>
+                <td>Docker (Intermediate)</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Command-Line To-Do List Manager</h3>
+            <p>Developed a collection of small projects using Java, C++, and Python, including a Student Record Management System, a Quiz Game Application, and a To-Do List App. Focused on file handling, data structures, and logic building across languages. Strengthened problem-solving, backend operations, and real-world application development skills for portfolio enhancement.</p>
+            
+            <h4>TO-DO LIST</h4>
+            <ul class="todo-list" id="todoList">
+                <li><input type="checkbox"> Buy groceries</li>
+                <li><input type="checkbox"> Read book</li>
+                <li><input type="checkbox"> Walk the dog</li>
+                <li><input type="checkbox"> Call plumber</li>
+            </ul>
+            <div>
+                <input type="text" id="newTask" placeholder="Add a new task">
+                <button onclick="addTask()">Add</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications & Courses</h2>
+        <ul>
+            <li>FUNDAMENTALS OF SOFTWARE TESTING - by Skillera</li>
+            <li>LINUX COMMANDS AND SHELL SCRIPTING - by Skillea</li>
+            <li>EFFECTIVE COMMUNICATION SKILLS - by skilled</li>
+        </ul>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>Add a downloadable resume (PDF format).</p>
+        <a href="#https://github.com/Yash-coder002/Yash_cv.git" class="btn" id="resumeBtn">📥 Download Resume</a>
+    </section>
+
+    <!-- JavaScript Section -->
+    <script>
+        // Download button functionality
+        document.getElementById('downloadBtn').addEventListener('click', function() {
+            alert('CV download would start here in a real implementation');
+        });
+        
+        document.getElementById('resumeBtn').addEventListener('click', function() {
+            alert('Resume download would start here in a real implementation');
+        });
+        
+        // Todo List functionality
+        function addTask() {
+            const newTaskInput = document.getElementById('newTask');
+            const taskText = newTaskInput.value.trim();
+            
+            if (taskText) {
+                const todoList = document.getElementById('todoList');
+                const newItem = document.createElement('li');
+                newItem.innerHTML = `<input type="checkbox"> ${taskText}`;
+                todoList.appendChild(newItem);
+                newTaskInput.value = '';
+            }
+        }
+        
+        // Allow adding tasks with Enter key
+        document.getElementById('newTask').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                addTask();
+            }
+        });
+    </script>
+</body>
+</html>
